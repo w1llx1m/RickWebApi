@@ -1,7 +1,7 @@
 {% block content %}
 <div>
     {% for x in characters.results %}
-    {{x}}
+    <img src="{{x.image}}" alt="" width="100px" height="100px">
     {% endfor %}
 </div>
 {% endblock %}

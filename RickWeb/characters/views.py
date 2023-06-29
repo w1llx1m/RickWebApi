@@ -5,7 +5,7 @@ import requests as rq
 def characters_view(request, *args, **kwargs):
     content = get_all_characters()
     context = {'characters': content}
-    return render(request, "characters.html", context)
+    return render(request, "characters/characters.html", context)
 
 
 def get_all_characters():

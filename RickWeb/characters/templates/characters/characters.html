@@ -1,8 +1,11 @@
 {% extends "./base.html" %}
 {% block content %}
-<div >
-    {% for x in characters.results %}
-    <img src="{{x.image}}" alt="" width="100px" height="100px">
-    {% endfor %}
+{% for x in characters.results %}
+<div style="border: 5px; background-color:  aliceblue; width: 150px; height: 220px; border-radius: 5%; display: inline-table;">
+    
+    <img  src="{{x.image}}" alt="" width="100px" height="100px">
+    <h3>{{x.name}}</h3>
+    
 </div>
+{% endfor %}
 {% endblock %}

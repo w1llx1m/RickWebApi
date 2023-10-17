@@ -9,6 +9,7 @@ def home_view(request, *args, **kwargs):
 def characters_view(request, *args, **kwargs):
     content = get_all_characters()
     context = {'characters': content}
+    print(content)
     return render(request, "characters/characters.html", context)
 
 
